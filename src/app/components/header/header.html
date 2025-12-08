@@ -1,0 +1,44 @@
+<header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">
+        <a routerLink="/">
+          <h1>Lot Sweeping Co.</h1>
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" [class.active]="isMenuOpen">
+        <li>
+          <a
+            routerLink="/home"
+            routerLinkActive="active"
+            (click)="isMenuOpen = false"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/about"
+            routerLinkActive="active"
+            (click)="isMenuOpen = false"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/i9-employment"
+            routerLinkActive="active"
+            (click)="isMenuOpen = false"
+            >Employment</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

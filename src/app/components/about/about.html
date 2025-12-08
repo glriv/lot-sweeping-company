@@ -1,0 +1,109 @@
+<div class="about">
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Learn more about our company and commitment to excellence</p>
+    </div>
+  </section>
+
+  <!-- Company Story -->
+  <section class="company-story">
+    <div class="container">
+      <h2 class="section-title">Our Story</h2>
+      <div class="story-content">
+        <p>
+          Founded in 2013, Lot Sweeping Company has been providing exceptional
+          parking lot sweeping and maintenance services to businesses throughout
+          the region. What started as a small operation with just one truck has
+          grown into a full-service sweeping company with a fleet of modern
+          equipment and a dedicated team of professionals.
+        </p>
+        <p>
+          We understand that a clean parking lot is the first impression your
+          customers have of your business. That's why we're committed to
+          delivering thorough, reliable service that keeps your property looking
+          its best year-round.
+        </p>
+        <p>
+          Our team takes pride in using environmentally responsible practices
+          and state-of-the-art equipment to ensure the highest quality results.
+          We work with property managers, shopping centers, restaurants, office
+          buildings, and construction sites to provide customized sweeping
+          solutions that fit their unique needs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat" *ngFor="let stat of stats">
+          <div class="stat-number">{{ stat.number }}</div>
+          <div class="stat-label">{{ stat.label }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Values -->
+  <section class="mission-values">
+    <div class="container">
+      <div class="mv-grid">
+        <div class="mv-card">
+          <h3>Our Mission</h3>
+          <p>
+            To provide the highest quality parking lot sweeping and maintenance
+            services while building lasting relationships with our clients
+            through reliability, professionalism, and outstanding results.
+          </p>
+        </div>
+        <div class="mv-card">
+          <h3>Our Values</h3>
+          <ul>
+            <li>
+              <strong>Reliability:</strong> We show up on time, every time
+            </li>
+            <li>
+              <strong>Quality:</strong> We never compromise on service
+              excellence
+            </li>
+            <li><strong>Integrity:</strong> We do what we say we'll do</li>
+            <li>
+              <strong>Safety:</strong> We prioritize the safety of our team and
+              your property
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="container">
+      <h2 class="section-title">Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member" *ngFor="let member of teamMembers">
+          <div class="member-avatar">
+            {{ member.name.charAt(0) }}
+          </div>
+          <h3>{{ member.name }}</h3>
+          <p class="position">{{ member.position }}</p>
+          <p class="description">{{ member.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="contact-cta">
+    <div class="container">
+      <h2>Ready to Work With Us?</h2>
+      <p>Contact us today to discuss your sweeping needs</p>
+      <a href="tel:555-123-4567" class="btn">Get in Touch</a>
+    </div>
+  </section>
+</div>
