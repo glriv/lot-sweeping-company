@@ -8,7 +8,7 @@ import { FooterComponent } from './components/footer/footer';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css',
+  styleUrls: ['./app.css'],
 })
 export class AppComponent {
   title = 'Lot Sweeping Company';

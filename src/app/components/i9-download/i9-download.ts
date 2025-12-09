@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './i9-download.html',
-  styleUrl: './i9-download.css',
+  styleUrls: ['./i9-download.css'],
 })
 export class I9DownloadComponent {
   downloadPDF() {
